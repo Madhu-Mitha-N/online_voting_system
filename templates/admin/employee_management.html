@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Employee Management</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='css/admin/employee_management.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <div class="sidebar">
+
+        <div class="logo">
+            Voting Admin
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="/admin/dashboard">
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/voter-management">
+                    Voters
+                </a>
+            </li>
+
+            <li>
+                <a href="/admin/candidate-management">
+                    Candidates
+                </a>
+            </li>
+
+            <li>
+                <a class="active"
+                href="/admin/employee-management">
+                    Employees
+                </a>
+            </li>
+
+        </ul>
+
+        <a href="/admin/login-page"
+        class="logout-btn">
+            Logout
+        </a>
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="page-header">
+
+            <h1>Employee Management</h1>
+
+            <a href="/admin/add-employee"
+            class="add-btn">
+
+                + Add Employee
+
+            </a>
+
+        </div>
+
+        <div class="search-box">
+
+            <input
+            type="text"
+            id="searchInput"
+            placeholder="Search employee...">
+
+        </div>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Task Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="employeeTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/admin/employee_management.js') }}"></script>
+
+</body>
+</html>

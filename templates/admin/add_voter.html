@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Add Voter</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='css/admin/add_voter.css') }}">
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="sidebar-top">
+
+            <div class="logo">
+                Voting Admin
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="/admin/dashboard">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/admin/voter-management">
+                        Voters
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Candidates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/admin/employee-management">
+                        Employees
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Assign Tasks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Statistics
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <a href="/admin/login-page" class="logout-btn">
+            Logout
+        </a>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+        <div class="form-container">
+
+            <h1>Add New Voter</h1>
+
+            <form id="voterForm">
+
+                <div class="form-grid">
+
+                    <input type="number"
+                    id="voter_id"
+                    placeholder="Voter ID"
+                    required>
+
+                    <input type="text"
+                    id="name"
+                    placeholder="Full Name"
+                    required>
+
+                    <input type="text"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required>
+
+                    <input type="date"
+                    id="dob"
+                    required>
+
+                    <input type="text"
+                    id="district"
+                    placeholder="District"
+                    required>
+
+                    <input type="text"
+                    id="ward"
+                    placeholder="Ward"
+                    required>
+
+                    <input type="email"
+                    id="email"
+                    placeholder="Email Address"
+                    required>
+
+                </div>
+
+                <button type="submit">
+                    Register Voter
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/admin/add_voter.js') }}"></script>
+
+</body>
+</html>

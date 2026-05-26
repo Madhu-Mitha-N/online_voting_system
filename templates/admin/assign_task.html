@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Assign Tasks</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='css/admin/assign_task.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            Voting Admin
+        </div>
+
+        <ul>
+
+            <li><a href="/admin/dashboard">Dashboard</a></li>
+
+            <li><a href="/admin/voter-management">Voters</a></li>
+
+            <li><a href="/admin/candidate-management">Candidates</a></li>
+
+            <li><a href="/admin/employee-management">Employees</a></li>
+
+            <li>
+                <a class="active"
+                href="/admin/assign-task">
+                    Assign Tasks
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN -->
+
+    <div class="main-content">
+
+        <div class="page-header">
+
+            <h1>Assign Tasks</h1>
+
+        </div>
+
+        <!-- FORM -->
+
+        <div class="task-form">
+
+            <input
+            type="text"
+            id="taskName"
+            placeholder="Enter Task">
+
+            <select id="employeeSelect">
+
+                <option value="">
+                    Select Employee
+                </option>
+
+            </select>
+
+            <button id="assignBtn">
+                Assign Task
+            </button>
+
+        </div>
+
+        <!-- TABLE -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Task</th>
+                        <th>Employee</th>
+                        <th>Status</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="taskTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/admin/assign_task.js') }}"></script>
+
+</body>
+
+</html>

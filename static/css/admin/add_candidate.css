@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+.dashboard-container{
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:250px;
+    background:#14213d;
+    color:white;
+    height:100vh;
+    position:fixed;
+    padding:30px 20px;
+}
+
+.logo{
+    font-size:28px;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin-bottom:15px;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:12px;
+    border-radius:10px;
+}
+
+.sidebar ul li a:hover{
+    background:#2563eb;
+}
+
+.logout-btn{
+    background:#ef4444;
+    color:white;
+    text-align:center;
+    padding:12px;
+    border-radius:10px;
+    display:block;
+    text-decoration:none;
+}
+
+/* MAIN */
+.main-content{
+    margin-left:250px;
+    padding:40px;
+    width:100%;
+}
+
+/* FORM */
+.form-container{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+#message{
+    margin-top:10px;
+}

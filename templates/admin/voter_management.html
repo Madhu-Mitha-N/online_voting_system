@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Voter Management</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/admin/voter_management.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="sidebar-top">
+
+            <div class="logo">
+                Voting Admin
+            </div>
+
+            <ul>
+
+                <li>
+                    <a href="/admin/dashboard">
+                        Dashboard
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/admin/voter-management"
+                       class="active">
+                        Voters
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/admin/candidate-management">
+                        Candidates
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/admin/employee-management">
+                        Employees
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Assign Tasks
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        Statistics
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <a href="/admin/login-page"
+           class="logout-btn">
+
+            Logout
+
+        </a>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+        <!-- HEADER -->
+
+        <div class="page-header">
+
+            <h1>
+                Voter Management
+            </h1>
+
+            <a href="/admin/add-voter" class="add-voter-btn">
+                    + Add Voter
+            </a>
+
+        </div>
+
+        <!-- SEARCH -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search voter by name..."
+            >
+
+        </div>
+
+        <!-- TABLE -->
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>District</th>
+                        <th>Ward</th>
+                        <th>Email</th>
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="voterTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/admin/voter_management.js') }}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+/* CONTAINER */
+.dashboard-container{
+    display:flex;
+}
+
+/* SIDEBAR */
+.sidebar{
+    width:250px;
+    background:#14213d;
+    color:white;
+    height:100vh;
+    position:fixed;
+    padding:30px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin-bottom:15px;
+}
+
+.sidebar ul li a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:12px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+    background:#2563eb;
+}
+
+/* LOGOUT */
+.logout-btn{
+    background:#ef4444;
+    color:white;
+    text-align:center;
+    padding:12px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+/* MAIN */
+.main-content{
+    margin-left:250px;
+    width:100%;
+    padding:30px;
+}
+
+/* HEADER */
+.page-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.page-header h1{
+    font-size:34px;
+    color:#111827;
+}
+
+/* ADD BUTTON */
+.add-btn{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    padding:12px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.add-btn:hover{
+    transform:translateY(-2px);
+}
+
+/* SEARCH */
+.search-box{
+    margin-bottom:20px;
+}
+
+.search-box input{
+    width:300px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* TABLE */
+.table-container{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#2563eb;
+    color:white;
+}
+
+th,td{
+    padding:14px;
+    text-align:left;
+    border-bottom:1px solid #eee;
+}
+
+/* DELETE BUTTON */
+.delete-btn{
+    background:#ef4444;
+    color:white;
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}

@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#eef2f7;
+}
+
+.profile-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px;
+}
+
+.profile-card{
+
+    width:450px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.profile-image{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.profile-image img{
+    width:120px;
+    height:120px;
+}
+
+.profile-card h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.profile-form input,
+.password-box input{
+
+    width:100%;
+
+    padding:14px;
+
+    margin-bottom:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#f1f5f9;
+}
+
+.profile-form input:disabled{
+    background:#e2e8f0;
+}
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    margin-bottom:15px;
+
+    color:white;
+
+    font-size:15px;
+}
+
+#editBtn{
+    background:#2563eb;
+}
+
+#saveBtn{
+    background:#16a34a;
+}
+
+#changePasswordBtn{
+    background:#9333ea;
+}
+
+.logout-btn{
+    background:#ef4444;
+}
+
+.password-box{
+    margin-top:20px;
+}
+
+#message{
+    text-align:center;
+    margin-top:10px;
+}

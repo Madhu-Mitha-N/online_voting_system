@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Voter Profile</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='css/voter/voter_profile.css') }}">
+
+</head>
+
+<body>
+
+<div class="profile-container">
+
+    <div class="profile-card">
+
+        <!-- IMAGE -->
+
+        <div class="profile-image">
+
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/149/149071.png">
+
+        </div>
+
+        <h1 id="profileName"></h1>
+
+        <!-- PROFILE FORM -->
+
+        <div class="profile-form">
+
+            <input type="text"
+            id="name"
+            disabled>
+
+            <input type="email"
+            id="email"
+            disabled>
+
+            <input type="text"
+            id="phone"
+            disabled>
+
+            <input type="text"
+            id="district"
+            disabled>
+
+            <input type="text"
+            id="ward"
+            disabled>
+
+        </div>
+
+        <!-- BUTTONS -->
+
+        <button id="editBtn">
+
+            Edit Profile
+
+        </button>
+
+        <button id="saveBtn">
+
+            Save Changes
+
+        </button>
+
+        <!-- PASSWORD -->
+
+        <div class="password-box">
+
+            <h3>Change Password</h3>
+
+            <input
+            type="password"
+            id="currentPassword"
+            placeholder="Current Password">
+
+            <input
+            type="password"
+            id="newPassword"
+            placeholder="New Password">
+
+            <button id="changePasswordBtn">
+
+                Change Password
+
+            </button>
+
+        </div>
+
+        <button id="logoutBtn"
+        class="logout-btn">
+
+            Logout
+
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/voter/voter_profile.js') }}"></script>
+
+</body>
+</html>

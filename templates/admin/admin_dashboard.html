@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static',
+        filename='css/admin/admin_dashboard.css') }}">
+
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- SIDEBAR -->
+
+        <div class="sidebar">
+
+    <div class="sidebar-top">
+
+        <div class="logo">
+            Voting Admin
+        </div>
+
+        <ul>
+
+    <li>
+        <a href="/admin/dashboard">
+            Dashboard
+        </a>
+    </li>
+
+    <li>
+        <a href="/admin/voter-management">
+            Voters
+        </a>
+    </li>
+
+    <li>
+        <a href="/admin/candidate-management">
+            Candidates
+        </a>
+    </li>
+
+    <li>
+        <a href="/admin/employee-management">
+            Employees
+        </a>
+    </li>
+
+    <li>
+        <a href="/admin/assign-task">
+            Assign Tasks
+        </a>
+    </li>
+
+    <li>
+        <a href="/admin/statistics">
+            Statistics
+        </a>
+    </li>
+
+</ul>
+
+    </div>
+
+    <a href="/admin/login-page" class="logout-btn">
+        Logout
+    </a>
+
+</div>
+
+
+        <!-- MAIN CONTENT -->
+
+        <div class="main-content">
+
+            <div class="topbar">
+
+                <h1>Admin Dashboard</h1>
+
+                <!-- <div class="profile">
+
+                    <span id="adminName">
+                        Admin
+                    </span>
+
+                </div> -->
+
+            </div>
+
+
+            <<!-- DASHBOARD CARDS -->
+
+<div class="cards">
+
+    <div class="card">
+
+        <h2>Total Voters</h2>
+
+        <h3 id="totalVoters">
+            0
+        </h3>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Total Votes</h2>
+
+        <h3 id="totalVotes">
+            0
+        </h3>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Total Candidates</h2>
+
+        <h3 id="totalCandidates">
+            0
+        </h3>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Total Employees</h2>
+
+        <h3 id="totalEmployees">
+            0
+        </h3>
+
+    </div>
+
+</div>
+
+            <!-- RANKING -->
+
+            <div class="ranking-section">
+
+                <h2>Candidate Ranking</h2>
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Candidate</th>
+                            <th>Party</th>
+                            <th>Votes</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="rankingTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static',
+    filename='js/admin/admin_dashboard.js') }}"></script>
+
+</body>
+
+</html>

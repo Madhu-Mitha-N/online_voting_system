@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Employee Login</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='css/employee/employee_login.css') }}">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <h1>Employee Login</h1>
+
+        <form id="employeeLoginForm">
+
+            <input
+            type="email"
+            id="email"
+            placeholder="Employee Email"
+            required>
+
+            <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required>
+
+            <button type="submit">
+
+                Login
+
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/employee/employee_login.js') }}"></script>
+
+</body>
+</html>

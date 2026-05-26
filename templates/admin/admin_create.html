@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Create</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static',
+        filename='css/admin/admin_create.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="create-card">
+
+            <h1>ONLINE VOTING</h1>
+
+            <h2>Create Admin</h2>
+
+            <form id="adminCreateForm">
+
+                <div class="input-group">
+
+                    <label>Admin Name</label>
+
+                    <input type="text"
+                        id="admin_name"
+                        placeholder="Enter admin name">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input type="password"
+                        id="password"
+                        placeholder="Enter password">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Confirm Password</label>
+
+                    <input type="password"
+                        id="confirm_password"
+                        placeholder="Confirm password">
+
+                </div>
+
+                <button type="submit">
+                    Create Admin
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+            <div class="login-link">
+
+                <a href="/admin/login-page">
+                    Already have account? Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static',
+    filename='js/admin/admin_create.js') }}"></script>
+
+</body>
+
+</html>

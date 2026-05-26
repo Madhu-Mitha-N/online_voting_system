@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login</title>
+
+    <link rel="stylesheet"
+        href="{{ url_for('static',
+        filename='css/admin/admin_login.css') }}">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="login-card">
+
+            <h1>ONLINE VOTING</h1>
+
+            <h2>Admin Login</h2>
+
+            <form id="adminLoginForm">
+
+                <div class="input-group">
+
+                    <label>Admin Name</label>
+
+                    <input type="text"
+                        id="admin_name"
+                        placeholder="Enter admin name">
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <input type="password"
+                        id="password"
+                        placeholder="Enter password">
+
+                </div>
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+            <p id="message"></p>
+
+            <div class="create-link">
+
+                <a href="/admin/create-page">
+                    Create Admin Account
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static',
+    filename='js/admin/admin_login.js') }}"></script>
+
+</body>
+
+</html>

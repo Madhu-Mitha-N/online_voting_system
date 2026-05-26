@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Voter Login</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='css/voter/voter_login.css') }}">
+
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <div class="login-card">
+
+        <h1>Online Voting System</h1>
+
+        <h2>Voter Login</h2>
+
+        <form id="loginForm">
+
+            <input
+            type="number"
+            id="voter_id"
+            placeholder="Enter Voter ID"
+            required>
+
+            <input
+            type="password"
+            id="password"
+            placeholder="Enter Password"
+            required>
+
+            <button type="submit">
+
+                Login
+
+            </button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/voter/voter_login.js') }}"></script>
+
+</body>
+</html>

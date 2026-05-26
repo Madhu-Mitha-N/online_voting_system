@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Candidate</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static',
+          filename='css/admin/add_candidate.css') }}">
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="logo">Voting Admin</div>
+
+        <ul>
+            <li><a href="/admin/dashboard">Dashboard</a></li>
+            <li><a href="/admin/voter-management">Voters</a></li>
+            <li><a href="/admin/candidate-management">Candidates</a></li>
+        </ul>
+
+        <a class="logout-btn" href="/admin/login-page">Logout</a>
+
+    </div>
+
+    <!-- MAIN -->
+    <div class="main-content">
+
+        <div class="form-container">
+
+            <h1>Add New Candidate</h1>
+
+            <form id="candidateForm">
+
+                <input type="text" id="name" placeholder="Candidate Name" required>
+
+                <input type="text" id="party_name" placeholder="Party Name" required>
+
+                <button type="submit">Add Candidate</button>
+
+            </form>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/admin/add_candidate.js') }}"></script>
+
+</body>
+</html>

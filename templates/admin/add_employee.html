@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Add Employee</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='css/admin/add_employee.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <div class="sidebar">
+
+        <div class="logo">
+            Voting Admin
+        </div>
+
+    </div>
+
+    <div class="main-content">
+
+        <div class="form-container">
+
+            <h1>Add Employee</h1>
+
+            <form id="employeeForm" autocomplete="off">
+
+    <input
+    type="number"
+    id="employee_id"
+    placeholder="Employee ID"
+    autocomplete="off"
+    required>
+
+    <input
+    type="text"
+    id="name"
+    placeholder="Employee Name"
+    autocomplete="off"
+    required>
+
+    <input
+    type="email"
+    id="email"
+    placeholder="Employee Email"
+    autocomplete="off"
+    required>
+
+    <button type="submit">
+
+        Add Employee
+
+    </button>
+
+</form>
+
+            <p id="message"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/admin/add_employee.js') }}"></script>
+
+</body>
+</html>

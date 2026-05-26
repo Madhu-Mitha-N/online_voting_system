@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+    <title>Voter Dashboard</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static',
+    filename='css/voter/voter_dashboard.css') }}">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- TOPBAR -->
+
+    <div class="topbar">
+
+        <h1>
+            Online Voting System
+        </h1>
+
+        <div class="profile-section">
+
+            <button id="profileBtn">
+
+                👤
+
+            </button>
+
+            <div class="profile-dropdown"
+                 id="profileDropdown">
+
+                <a href="/voter/profile">
+
+                    Profile
+
+                </a>
+
+                <button id="logoutBtn">
+
+                    Logout
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- TITLE -->
+
+    <div class="title-section">
+
+        <h2>
+            Cast Your Vote
+        </h2>
+
+        <p id="voteStatus"></p>
+
+    </div>
+
+    <!-- CANDIDATE LIST -->
+
+    <div class="candidate-container"
+         id="candidateContainer">
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static',
+filename='js/voter/voter_dashboard.js') }}"></script>
+
+</body>
+</html>
